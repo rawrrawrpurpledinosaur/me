@@ -8,7 +8,7 @@
 		<img src = 'capybara.jpg' alt = 'Error' width = 75% height = 75%>
 		<div style='text-align:center;'>
 			<button id="button">Click me to like this capybara!</button>
-		<p id = "update"> 0 People have liked the capybara </p>
+		<p id = "update"> You have liked this capybara 0 times </p>
 		</div>
 <script> 
 		var count = 0;
@@ -18,7 +18,7 @@ button.onclick = updateStatus;
 
 function updateStatus() {
 			count++	
-			update.textContent = count + " People have liked the capybara";
+			update.textContent = "You have liked this capybara " + count + " times";
 }
 </script>
 	</body>
