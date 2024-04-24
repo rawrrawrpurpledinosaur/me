@@ -2,9 +2,24 @@
 <html> 
 <head>
 	<title>Capybara</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 	<body> 
-	<p> i like capybaras </p>
+		<img src = 'capybara.jpg' alt = 'Error' width = 75% height = 75%>
+		<div style='text-align:center;'>
+			<button id="button">Click me to like this capybara!</button>
+		<p id = "update"> 0 People have liked the capybara </p>
+		</div>
+<script> 
+		var count = 0;
+var button = document.getElementById('button');
+var update = document.getElementById('update');
+button.onclick = updateStatus;
+
+function updateStatus() {
+			count++	
+			update.textContent = count + " People have liked the capybara";
+}
+</script>
 	</body>
 </html> 
